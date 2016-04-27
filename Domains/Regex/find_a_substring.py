@@ -7,7 +7,7 @@ def parse_words(s):
     words = s.split()
     good_words = []
     for word in words:
-        if re.search(r'^\w+$', word):
+        #if re.search(r'^\w+$', word):
             good_words.append(word)
     return good_words
 
@@ -44,6 +44,7 @@ def hackerrank():
     for i in range(n_sentences):
         sentence = input()
         words.extend(parse_words(sentence))
+    print(words)
     n_targets = int(input())
     for i in range(n_targets):
         target = input()
@@ -52,5 +53,4 @@ def hackerrank():
 
 if __name__ == '__main__':
     hackerrank()
-
 
