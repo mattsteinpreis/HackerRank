@@ -48,7 +48,7 @@ mu = 1.2
 prob = st.poisson.pmf(k=2, mu=mu)
 print('{0:.3f}'.format(prob))
 #(2)
-prob = 1 - st.poisson.cdf(k=2, mu=mu)
+prob = st.poisson.cdf(k=2, mu=mu)
 print('{0:.3f}'.format(prob))
 #(3)
 mu_10 = 10*mu
